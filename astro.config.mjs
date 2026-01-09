@@ -18,8 +18,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 
 // https://astro.build/config
 export default defineConfig({
-  // site: USER_SITE,
-  site : "https://c4eiUm.github.io",
+  site: USER_SITE,
   output: "static",
   style: {
     scss: {
