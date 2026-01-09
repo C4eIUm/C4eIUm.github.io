@@ -1,0 +1,98 @@
+---
+import { Icon } from "astro-icon/components";
+import MainCard from "@/components/MainCard.astro";
+import FeatureCard from "@/components/mdx/FeatureCard.astro";
+import GitHubStats from "@/components/mdx/GitHubStats.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Home">
+
+  <div class="space-y-10 mt-0">
+    <!-- Hero Section -->
+    <section class="relative isolate overflow-hidden pt-0 pb-10">
+      <div class="absolute inset-x-0 -top-24 h-64 bg-gradient-to-br from-primary/15 via-secondary/15 to-accent/20 blur-3xl opacity-70" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 right-10 h-64 w-64 bg-gradient-to-tr from-secondary/20 to-primary/10 blur-3xl opacity-70" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4">
+        <div class="grid gap-10 md:grid-cols-[1.2fr,0.9fr] items-center">
+          <div class="space-y-6 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-base-content/10 bg-base-100/70 shadow-sm backdrop-blur">
+              <Icon name="lucide:sparkles" class="w-4 h-4 text-secondary" />
+              <span class="text-sm text-base-content/70">Welcome to my world of exploration</span>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              Caelum's Lab Notes
+            </h1>
+
+            <p class="text-lg text-base-content/80 leading-relaxed max-w-2xl mx-auto md:mx-0">
+              我的战场在内存的荒野。透过调试镜片审视逻辑，用载荷撬开缝隙，让 shellcode 如预言的种子生根发芽，在远程主机上绽放出 root shell 的花。并非破坏，而是追逐系统深层次真理的旅程。
+            </p>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+              <a href="/blog" class="btn btn-primary gap-2 btn-shine-effect">
+                <Icon name="lucide:book-open" class="w-5 h-5" />
+                <span>Explore Blog</span>
+              </a>
+              <a href="/about" class="btn btn-ghost border-base-content/20 bg-base-100/70 gap-2">
+                <Icon name="lucide:compass" class="w-5 h-5" />
+                <span>About Me</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+              <div class="rounded-2xl border border-base-content/10 bg-base-100/70 px-5 py-4 shadow-sm backdrop-blur">
+                <p class="text-xs uppercase tracking-[0.2em] text-base-content/60">Focus</p>
+                <p class="text-lg font-semibold mt-1">Kernel</p>
+              </div>
+              <div class="rounded-2xl border border-base-content/10 bg-base-100/70 px-5 py-4 shadow-sm backdrop-blur">
+                <p class="text-xs uppercase tracking-[0.2em] text-base-content/60">Current quest</p>
+                <p class="text-lg font-semibold mt-1">为什么想学的东西这么多</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="rounded-3xl border border-base-content/10 bg-base-100/80 shadow-xl backdrop-blur p-6">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <Icon name="lucide:cpu" class="w-5 h-5 text-primary" />
+                  <span class="text-sm font-semibold text-base-content/80">我的面板</span>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-medium bg-secondary/15 text-secondary">Live</span>
+              </div>
+
+              <div class="rounded-2xl border border-base-content/10 bg-base-100/70 p-4 shadow-sm space-y-4">
+                <div class="flex items-center gap-2 text-sm text-base-content/70">
+                  <Icon name="lucide:radar" class="w-4 h-4 text-secondary" />
+                  <span>Current</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="rounded-xl border border-base-content/10 bg-base-100/80 px-3 py-2">
+                    <p class="text-xs text-base-content/60">技术栈</p>
+                    <p class="text-sm font-semibold">Linux · C </p>
+                  </div>
+                  <div class="rounded-xl border border-base-content/10 bg-base-100/80 px-3 py-2">
+                    <p class="text-xs text-base-content/60">我的状态</p>
+                    <p class="text-sm font-semibold">备战期末</p>
+                  </div>
+                  <div class="rounded-xl border border-base-content/10 bg-base-100/80 px-3 py-2">
+                    <p class="text-xs text-base-content/60">正在学习</p>
+                    <p class="text-sm font-semibold">Kernel pwn</p>
+                  </div>
+                  <div class="rounded-xl border border-base-content/10 bg-base-100/80 px-3 py-2">
+                    <p class="text-xs text-base-content/60">我的心情</p>
+                    <p class="text-sm font-semibold">非常平静</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</BaseLayout>
