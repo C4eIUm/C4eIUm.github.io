@@ -7,7 +7,6 @@ categories:
   - Pwn
 tags:
   - heap
-  - tcache
 ---
 
 1. malloc首先进入__libc\_malloc
