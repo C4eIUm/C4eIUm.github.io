@@ -2,7 +2,7 @@
 title: glibc2.39 malloc总结
 description: glibc2.39 malloc总结
 pubDate: 11 01 2025
-image: /image/image3.jpg
+image: /image/image2.jpg
 categories:
   - Pwn
 tags:
