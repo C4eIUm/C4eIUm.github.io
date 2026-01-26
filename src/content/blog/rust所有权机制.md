@@ -68,6 +68,8 @@ let b = a;
 let c = Box::new(15);
 ```
 
+这种情况是另开了一个Box，不是所有权的转移
+
 ![alt text](<../../../public/image/Rust1/Pasted image 20260126110610.png>)
 
 # Rust内存管理策略
@@ -82,7 +84,7 @@ let b = Box::new([0;100]);
 free(b);
 assert!(b[0] == 0);
 ```
-![[Pasted image 20260126113208.png]]
+![!\[\[Pasted image 20260126113208.png\]\]](<../../../public/image/Rust1/Pasted image 20260126113208.png>)
 
 ## Box的真正拥有者来管理对应Box内存的释放
 Rust会自动释放Box的Heap内存
