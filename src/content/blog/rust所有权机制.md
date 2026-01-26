@@ -2,7 +2,7 @@
 title: Rust所有权
 description: Rust所有权
 pubDate: 01 26 2026
-image: /image/image1.jpg
+image: /image/image4.jpg
 categories:
   - Rust
 tags:
