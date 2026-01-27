@@ -1,7 +1,7 @@
 ---
 title: glibc2.39 malloc总结
 description: glibc2.39 malloc总结
-pubDate: 11 01 2025
+pubDate: 01 11 2025
 image: /image/image2.jpg
 categories:
   - Pwn
