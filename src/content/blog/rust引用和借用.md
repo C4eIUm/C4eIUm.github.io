@@ -2,7 +2,7 @@
 title: Rust引用和借用
 description: Rust引用和借用
 pubDate: 01 27 2026
-image: /image/image3.jpg
+image: /image/image2.jpg
 categories:
   - Rust
 tags:
