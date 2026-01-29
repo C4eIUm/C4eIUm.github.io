@@ -1,7 +1,7 @@
 ---
 title: archlinux启动流程
 description: archlinux启动流程
-pubDate: 01 29 2025
+pubDate: 01 29 2026
 image: /image/image1.jpg
 categories:
   - Archlinux
